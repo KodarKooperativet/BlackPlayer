@@ -1,0 +1,358 @@
+<html>
+	<head>
+		<title>BlackPlayer FAQ</title>
+	</head>
+
+	<body>
+		<h3><a id="Index">Index</a></h3>
+		
+		<!-- Categories -->
+		
+		<a href="#Playlists">	<h4>1. Playlists, Recently Added Tracks, Remove Tracks from Playlist</h4></a>
+		<a href="#Library">		<h4>2. Library, Supported Audio formats (WMA,ALAC,cue support), External Apps, Playback, Use as Ringtone</h4></a>
+		<a href="#Lyrics">		<h4>3. Lyrics</h4></a>
+		<a href="#AlbumArtist">	<h4>4. Album-Artist support</h4></a>
+		<a href="#Lockscreen">	<h4>5. Lockscreen</h4></a>
+		<a href="#AlbumCover">	<h4>6. Album Cover & Thumbnails</h4></a>
+		<a href="#Translation">	<h4>7. Translation</h4></a>
+		<a href="#TagEditing">	<h4>8. Tag Editing, Lyrics editing, Track deletion</h4></a>
+		<a href="#NowPlaying">	<h4>9. Now Playing</h4></a>
+		<a href="#EX">			<h4>10. BlackPlayer EX</h4></a>
+		<a href="#Interface">	<h4>11. Interface, Themes, Show Sleep timer</h4></a>
+		<a href="#Tips">		<h4>12. Tips n' Tricks, Battery settings</h4></a>
+		<a href="#Permissions">	<h4>13. Permissions</h4></a>
+		<a href="#Beta">		<h4>14. Beta Testing Program</h4></a>
+		<a href="#Notification"><h4>15. Notification. Cant see text or buttons.</h4></a>
+		<br />
+		<!-- The FAQ -->
+		<h4><a href="https://plus.google.com/u/1/communities/116699651117862058032">Join the Community for the latest news, events and issues!</a></h4> <br />
+		
+		<h4> <a id="Playlists">1. Playlists</a></h4>
+		
+		<b>- M3U Playlist importing/exporting </b> <br />
+		BlackPlayer has Playlist importing, its available in the Playlist page at the bottom, click on 'Import'.<br />
+		Currently only .m3u and .m3u8 is supported. The feature is quite new, so please submit any bugs if you encounter any. <br />
+		The EX version also has Playlist Export as a BETA feature. Playlists are exported to .m3u format. The absolute paths are currently used in the resulting playlist and may not work on other devices than your phone. <br />
+		If you don't like BlackPlayer's importing/exporting there are 3rd party app in the Store that can do it also, try use them. <br />
+
+		More technical info on M3U: <a href="http://en.wikipedia.org/wiki/M3U">http://en.wikipedia.org/wiki/M3U</a> <br />
+		
+		<br />
+		
+		<b>- Playlists keeps disappearing! Playlists are emptied after restarted phone.</b> <br />
+		The Playlists comes without any guarantees, you should keep your important Playlists backed-up using BlackPlayer or 3rd party app.<br />
+		
+		
+		<br />
+		
+		<b>- How to remove Tracks from a Playlist?</b> <br />
+		Tracks from a Playlist can be swiped removed. This is the same for the play-queue except that it can only be left swipe removed.<br />
+		
+		<br />
+		
+		<b>- Where is the Recently Added tracks playlist?</b> <br />
+		The Recently Added tracks are located in the "Playlists" section of the application.<br />
+		Swipe left edge to open sliding menu, select "Playlists", swipe then left until you reach the "Recently Added" page. <br />
+		Its located after "FAVORITES" page. <br />
+		
+		<br />
+		
+		<h4><a id="Library">2. Library & Audio Formats</a></h4>
+		
+		<b>- How to add Tracks? Exclude folders from Library?</b> <br />
+		BlackPlayer uses the build-in Music library, therefore no excluding or including can be done. The Android system on your device manages the library and is shared amongst other Music players.<br />
+		If you really want to exclude folder. The Paid (EX) version can blacklist folders. <br />
+		The music scanner scans and adds new Tracks automatically. It might take a while for the tracks to appear. <br />
+		
+		<br />
+		
+		<b>- Why cannot I see my tracks stored on SD-card? Scan my SD-card? How to update Library? I cannot see my newly added Tracks!</b> <br />
+		Try restart your phone, it might take a while for the tracks to be scanned. Also BlackPlayer is not in charge of scanning your audio files, it uses the build-in music library which is managed by your phone.<br />
+		The "Music Scanner" build-in in BlackPlayer only hands over files to the build-in scanner. <br />
+		
+		<br />
+		
+		<b>- Why is not Crossfading supported/working on my device?</b> <br />
+		The crossfading is not supported on devices running Qualcomm® Snapdragon™ 800 series and higher, due to the audio hardware decoder. All other devices should be supported. However if you are using Bluetooth audio crossfading should work fine. 
+		The issues with crossfading is the reason why the features is included in the free version.<br />
+		
+		<br />
+		
+		<b>- The volume jumps up for a second when changing to a new track.</b> <br />
+		This is a known bug and its caused when you have both crossfading and sound-effects enabled. Turn off one of them.<br />
+		
+		<br />
+		
+		<b>- Add support for additional audio types? Add Support for WMA? (Musepack, alac, Opus, cue etc.)</b> <br />
+		Since BlackPlayer uses the build-in audio decoder from your phone, the supported formats vary between manufactures and android version and BlackPlayer cannot add additional support. <br />
+		For a complete list of supported audio formats: <a href="http://developer.android.com/guide/appendix/media-formats.html#core">http://developer.android.com/guide/appendix/media-formats.html#core</a> <br />
+		
+		
+		<br />
+		
+		<b>- Why cannot I see the Loudness Enhancer (Amplifier) ? Amplifier do not work on my device!</b> <br />
+		The Amplifier only works on Android 4.4+ and newer. It is not guaranteed to work on all devices, Its up to the hardware manufacture to implement it. 
+		Sometimes Amplifier only works using headphones and not the build-in speaker. It also might not work on custom ROMs.<br />
+		
+		<br />	
+		
+		<b>- Equalizer turns off immediately after leaving the Equalizer page! </b> <br />
+		Try turning off the "Fix Equalizer turning off" in Audio Setting. You can also try using the Stock Equalizer instead in Audio settings. <br />
+		
+		<br />
+		
+		<b>- The Volume Spikes (very loud) after turning the Equalizer on (or resuming music)! The volume is increased suddenly! </b> <br />
+		This is a known bug in Android. Use the Stock (build-in) Equalizer instead. Change it in Audio settings -> Select Equalizer. Or dont use BlackPlayer equalizer at all. <br />
+		
+		<br />
+		
+		<b>- Shuffle mode keeps turning off.</b> <br />
+		Playing a Album, Artist, Playlist or Genre (Pressing Play button in) currently turns off Shuffle. (Might change in later versions). Shuffle might be turned off in other cases, its an issue im trying to resolve.<br />
+		
+		<br />
+		
+		<b>- How does the sorting works?</b> <br />
+		The main Track list, Artist tracks and Genre tracks can be sorted many ways. The current sorting affects all of the tracks list. For example selecting a specific Genre track sorting applies to all Genre tracks no matter the genre. <br />
+		The Playlist track sorting are Playlist individual and are permantent. <br />
+		
+		<br />
+		
+		<b>- The previous track button should reset the track to 0! How does the "Previous Track mode" work?</b> <br />
+		The mode "Fast" is the default mode. Pressing previous track button (<<) jumps to the previous track. <br />
+		"Classic" resets the track if 3 seconds has passed on the track.<br />
+		
+		<br />
+		
+		<b>- How can I change the startpage of the Library? </b> <br />
+		This option is only available in the paid version. In the paid version: Settings > Interface > Library > Startpage.<br />
+		
+		<br />
+		
+		<b>- My external Lyrics-app, Lockscreen-app, Scrobbler is not working!</b> <br />
+		Enable "Broadcast Now Playing" in Metadata settings.<br />
+		
+		<br />
+		
+		<b>- Music stops when Application is removed from Recent apps!</b> <br />
+		Enable "Persistent Service" in Advanced Settings. This feature might not work on all devices. <br />
+	
+		<br />		
+		
+		<b>- Please add "set as Ringtone option". How can I set a Track as a ringtone? </b> <br />
+		Enable "Ringtone Track option" in Interface -> General -> More..  <br />
+		Then long-press on the track and select 'Use as Ringtone'.  <br />
+		
+		<br />		
+		
+		<h4><a id="Lyrics">3. Lyrics</a></h4>
+		<b>- How do I show Lyrics?</b> <br />
+		Only embedded lyrics are supported. Tap on the Album cover in Now Playing page to show the "Quick Actions". Select "Show Lyrics" or long press on any action and select "Show Lyrics".<br />
+		
+		<br />
+		
+		<b>- How do I embed Lyrics?</b> <br />
+		BlackPlayer can embed lyrics manually from the Tag edit dialog in each track or from the "Edit Lyrics" quick action. <br />
+		
+		<br />
+		
+		<b>- Please add support for online lyrics! </b> <br />
+		This is difficult to add since most lyrics databases are copyrighted and requires expensive licenses which I cannot afford. <br />
+		
+		<br />
+		
+		<b>- I cannot embedd my Lyrics! 'Cannot write to File' Error! </b> <br />
+		Some audio files might not be able to insert lyrics due to damaged tags. <br />
+		(Android 4.4) Tracks stored on the SDCard cannot be edited (inserted with Lyrics.<br />
+		(Android 5.0+) You must grant write access to your device, you can do this in Advanced Settings -> 'Select SD-card'. 
+		Point to the root of your SD-card. <br />
+		
+		<br />
+		
+		
+		<h4><a id="AlbumArtist">4. Album Artist support</a></h4>
+		<br />
+		
+		<b>- Please add support for "ALBUM ARTIST" tag. Where do I enable the "Album Artists"?</b> <br />
+		BlackPlayer uses the build-in music library, and the build-in music library unfortunately does not support the "ALBUM ARTIST" tag/table. <br />
+		Since the library is build-in into every phone, I cannot remotely add support for it. <br />
+		
+		
+		<h4><a id="Lockscreen">5. Lockscreen</a></h4>
+		
+		<b>- Where is the lockscreen support? I don't see any. The lockscreen is not working!</b> <br />
+		Lockscreen controls is unfortunately only supported on some Android 4.0+ devices and manufactures. BlackPlayer uses the standard media remote controls same as other applications.<br />
+		Your device manufacture must implement the support for the lockscreen to be able to use it.<br />
+		There are no plans to add a custom lockscreen. Huawei is known to not support the lockscreen.<br />
+		<br />
+		
+		<b>- I just Updated to Android 5.0 Lollipop and my Lockscreen controls is missing. </b> <br />
+		Lockscreen controls is removed in Lollipop, the Notification is used instead. Disable "Auto Hide Notification" in Interface Settings -> More... (Free) or Remote Settings (EX).<br />
+		Sometimes the notification might not be visible due to Androids new notification privacy setting. Change the "When device is locked" setting in "Sound & notification" to any other than "Don't show notifications at all". <br />
+		If you see a "BlackPlayer" "Content hidden" notification, this is due to the new notification privacy setting. <br />
+		<br />
+		
+		<h4><a id="AlbumCover">6. Album Cover</a></h4>
+		
+		<b>- Album covers keep disappearing (gets removed) (after reboot). </b> <br />
+		This is a known bug with the album cover management for some phone models.<br />
+		The Album cover management comes without and guarantees and for a more permanent solution 
+		you should place the image file in the same folder as the Album, and name it 'cover.jpg' or something similar.<br />
+		
+		
+		<b>- The images in the Notification (or Album list) is showing the wrong image!</b> <br />
+		Sometimes the thumbnails get wrong image, you can delete the thumbnails to in Settings > Metadata > Delete Thumbnails. New correct thumbnails will then be created. This only affects Album thumbnails.<br />
+		
+		<h4><a id="Translation">7. Translation</a></h4>
+		
+		<b>- Why is BlackPlayer not available in my language? The translations are bad or contains wrong words.</b> <br />
+		oneskyapp is used to manage the translations and everyone is allowed to help out with the translations. Good translators can be rewarded with a Google Play BlackPlayer EX code. 
+		<br /> Help here: <a href="http://blackplayer.oneskyapp.com/" >http://blackplayer.oneskyapp.com/</a> <br />
+		If you encounter the use of bad words or trolling users email the developer. <br />
+		
+		<br />
+		
+		<h4><a id="TagEditing">8. File Tag Editing</a></h4>
+		
+		<b>- My file cannot be edited? Error!?</b> <br />
+		Some music files have damaged ID3 tags and cannot be edited. <br />
+		(Android 4.4+ Only) Music files stored on the SD card might not be edited due to Android limitations. Google "SD card fix Android 4.4" for more info. <br />
+		(Android 5.0) Users can grant BlackPlayer write access and thus allowing tag editing and delete music. Can be accessed in Advanced settings. <br />
+		
+		<br />
+		
+		<b>- My Lyrics does not get updated! My Tracks are not deleted!</b> <br />
+		Some music files have damaged ID3 tags and cannot be edited, but in most cases its due to Android 4.4+ changes.<br />
+		(Android 4.4) Music files stored on the SD card might not be edited (or deleted) due to Android limitations. Google "SD card fix Android 4.4" for more info. <br />
+		(Android 5.0+) Users can grant BlackPlayer write access and thus allowing tag editing and delete music. Can be accessed in Advanced settings -> 'Select SD-card'. <br />
+		
+		<br />
+		
+		<h4><a id="NowPlaying">9. Now Playing</a></h4>
+		
+		<b>- Where are the "Quick Action" ?</b> <br />
+		Tap on the the Album cover to show 3 or 4 quick actions. Each action can be changed by long pressing on them.<br />
+		
+		<b>- Can you add option to show bitrate, sampling rate and format of the current track?</b> <br />
+		
+		This feature is available in the paid version of BlackPlayer. Enable "Extra Track Info" in Settings > Interface > Now Playing > More...<br />
+		
+		<b>- I would like the Album cover not to be streched! Not to fill the screen. Album cover is cutoff!</b> <br />
+		
+		Change "Album image scaletype" to "Fit Center" in Settings > Interface > Now Playing > More... <br />
+		
+		<h4><a id="EX">10. BlackPlayer EX</a></h4>
+		
+		<b>- I just bought the EX version, have licensing Error! Cannot verify license.</b> <br />
+		Try these steps to troubleshoot the issue. Email the developer if you are still receiving errors: <br />
+		* Try  clear  data from Google Play by going to Android Settings > Apps > Google Play and select "Force stop" then "Clear cache" and “Clear data.” <br />
+		* Try clear data of BlackPlayer EX. <br />
+		* Restart both applications. <br />
+		* Is your system date and time correct?  <br />
+		* Make sure that the account on your device is the same as the account you used to purchase BlackPlayer EX. (check this via Settings > Accounts > Google)  <br />
+		* Enable Automatic Date & time in settings 
+		* Try signing into https://wallet.google.com/manage to verify that the app is not “refunded” nor “cancelled.”  <br />
+e.	
+		* If you are still seeing the "application not licensed message", visit Google Support (https://support.google.com/googleplay/?rd=1#contact=1 ) and indicate what you have already done to troubleshoot the issue. Because this issue is related to Google’s licensing mechanism (LVL, License Verification Library) they should be able to help you. <br />
+		
+		<h4><a id="Interface">11. Interface, Themes</a></h4>
+		
+		<b>- Can you add support for light (white) theme? </b> <br />
+		I have no plans on the near future to add Light theme, there is just currently to many new features that I would like to add before that.<br />
+		
+		<br />
+		
+		<b>- Where are the "Quick Action(s)" ?</b> <br />
+		Tap on the the Album cover to show 3 (or 4 for tablet) quick actions. Each action can be changed by long pressing on them and selecting a new action.<br />
+		
+		<br />
+		
+		<b>- Where is the Sleep timer? Please add Sleep timer.</b> <br />
+		By default the sleep timer is hidden. It can be accessed from the sliding left menu by enabling "Show Sleep timer" in Interface settings at the bottom. Or as a Quick action (actions visible when tapping on album cover) in Now Playing page. Or as menu key binding if you have a menu button.<br />
+		
+		<br />
+		
+		
+		
+		<h4><a id="Tips">12. Tips n' Tricks, Help</a></h4>
+		
+		<b>- Now Playing</b> <br />
+		Almost all items can be pressed and long-pressed! Examples:<br />
+		* The Artist text can be pressed on to browse that Artist and long pressed to open the Artists long-press dialog. <br />
+		* Long pressing the Play button will stop the track and reset it the beginning. Long pressing Next or Previous track will fast-forward or rewind. <br />
+		* The Quick Actions (tap on Album cover to show them) can be changed, Long press! The shuffle and repeat buttons can also be changed, long press.<br />
+		
+		<br />
+		
+		<b>- Library </b> <br />
+		* All Artists, Tracks and Albums can be long pressed to open a dialog with many actions. <br />
+		 
+		* (Exclusive Only) The navigation items at the top can be pressed to show a few settings depending on the current page. If you long press on them "Manage Library Pages" will open.<br />
+		 <br />
+		
+		<b>- Album dialog </b> <br />
+		Single tapping on the Album cover image will open the Albums long press dialog. <br />
+		 <br />
+		
+		<b>- BlackPlayer is draining by battery. How to improve battery-life? </b> <br />
+		* Disable "Track Music played" in Interface -> More... <br />
+		* Disable "Lockscreen Album Art" or (4.4+) "High Lockscreen Cover" in Interface -> More... (or Remote settings for EX version) <br />
+		* All audio effects drain battery, disable them. <br />
+		* Disable Crossfading and Gapless, they cause slightly extra drain.<br />
+		* Also Disable "Broadcast Nowplaying" if you are not using any external apps. <br />
+		 <br />
+		
+		
+		<h4><a id="Permissions">13. Permissions</a></h4>
+		
+		<b>- Why does the paid (EX) version requires to listen to my microphone?</b> <br />
+		The Microphone permission is only for the visualizer to listen to the audio, if you are not using it you can block the permission if you are able to do so. <br />
+		
+		<br />
+		
+		<b>- Why is Phone call permission required?</b> <br />
+		The phone call permission is to be able to know when someone is calling you so BlackPlayer can pause and resume the music. Most of the audio players have this permission.<br />
+		Most of the permissions in BlackPlayer can be blocked by 3rd party app without crashing or disabling BlackPlayer.<br />
+		
+		<br />
+		
+		<b>- Why does BlackPlayer required to start when phone is started? Why require BOOT_COMPLETE permission?</b> <br />
+		Blackplayer will only automatically start if you have enabled "Analog Autostart", it is required for that to work. <br />
+		
+		
+		<br />
+		
+		
+		<h4><a id="Beta">14. Beta Testing Program</a></h4>
+		
+		<b>- I just joined the BETA program, but I did not receive any new Beta version!</b> <br />
+		A beta version is not always available, if you have not received an new update after couple of hours then there probably is no Beta version out for testing. <br />
+		Check the community news if there is any information about new Beta releases.<br />
+		
+		<br />
+		
+		<b>- How do I become beta tester?</b> <br />
+		BlackPlayer is in need of beta testers that report bugs in the community. You can join with these links, use the correct link depending on your version of BlackPlayer. Also see above question.<br />
+		Free: <a href="https://play.google.com/apps/testing/com.kodarkooperativet.blackplayerfree">https://play.google.com/apps/testing/com.kodarkooperativet.blackplayerfree</a></h4> <br />
+		EX (paid): <a href="https://play.google.com/apps/testing/com.kodarkooperativet.blackplayerex">https://play.google.com/apps/testing/com.kodarkooperativet.blackplayerex</a></h4> <br />
+		
+		<br />
+		
+		
+		<h4><a id="Notification">15. Notification</a></h4>
+		
+		
+		<b>- I cant see the notification text or buttons. The buttons have wrong colors</b> <br />
+		First open the notification settings. <br />
+		EX: Open Settings -> Remote -> Scroll down to Notification. <br />
+		Free: Open Settings -> Interface Settings -> General -> More... -> Scroll down to Notification.<br>
+		Disable (or enable) 'Black Buttons' and change 'Text color' to White (or Black depending on your situation). <br />
+		
+		<br />
+		
+		
+		<a href="#Index"><h4>Go to Top</h4></a>
+		<br />
+		Last updated: 2016-03-10
+	</body>
+
+</html>
