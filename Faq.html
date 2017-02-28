@@ -24,8 +24,8 @@
 		<!-- Categories -->
 		
 		<a href="#Playlists">	<h4>1. Playlists, Recently Added Tracks, Remove Tracks from Playlist</h4></a>
-		<a href="#Library">		<h4>2. Library, Missing Tracks, Use as Ringtone, Hide Tracks (voice recording, notifications)</h4></a>
-		<a href="#AudioFormat">	<h4>3. Supported Audio formats (WMA,ALAC,cue support),Crossfading, External Apps, Playback, Equalizer, Audio effects.</h4></a>
+		<a href="#Library">		<h4>2. Library, Missing Tracks, Use as Ringtone, Hide Tracks (voice record, notifications). Exclude/Include Folder</h4></a>
+		<a href="#AudioFormat">	<h4>3. Supported Audio formats (WMA,ALAC,M4A,cue support),Crossfading, External Apps, Playback, Equalizer, Audio effects.</h4></a>
 		<a href="#Lyrics">		<h4>4. Lyrics, missing 'Lyrics' button.</h4></a>
 		<a href="#AlbumArtist">	<h4>5. Album-Artist support</h4></a>
 		<a href="#Lockscreen">	<h4>6. Lockscreen</h4></a>
@@ -45,7 +45,7 @@
 		<!-- The FAQ -->
 		<h4><a href="https://plus.google.com/u/1/communities/116699651117862058032">Join the Community for the latest news, events and issues!</a></h4> <br />
 		
-		<h4> <a id="Playlists">Playlists</a></h4>
+		<h3> <a id="Playlists">Playlists</a></h3>
 		
 		<b>- M3U Playlist importing/exporting </b> <br />
 		BlackPlayer has Playlist importing, its available in the Playlist page at the bottom, click on 'Import'.<br />
@@ -55,6 +55,9 @@
 		
 		More technical info on M3U: <a href="http://en.wikipedia.org/wiki/M3U">http://en.wikipedia.org/wiki/M3U</a> <br />
 		If you have problems with importing, try using different file managers, you should also try using the build-in File selector, long press on the 'Import' button. <br />
+		<br />
+		To Export a Playlist, long press on the Playlist you want to Export and select 'Export' from the list. The playlist will be exported in .m3u file to the root of the Internal storage. <br />
+		
 		<br />
 		
 		<b>- Playlists keeps disappearing! Playlists are emptied after restarted phone.</b> <br />
@@ -83,7 +86,7 @@
 		
 		<br />
 		
-		<h4><a id="Library">Library, Missing Tracks, Use as Ringtone</a></h4>
+		<h3><a id="Library">Library, Missing Tracks, Use as Ringtone</a></h3>
 		
 		<b>- Why cannot I see my tracks stored on SD-card? Scan my SD-card? How to update Library? I cannot see my newly added Tracks!</b> <br />
 		Try restart your phone, it might take a while for the tracks to be scanned. Also BlackPlayer is not in charge of scanning your audio files, it uses the build-in music library which is managed by your phone.<br />
@@ -100,7 +103,7 @@
 		
 		<br />
 		
-		<b>- How to add Tracks? Exclude folders from Library?</b> <br />
+		<b>- How to add Tracks? Exclude folders from Library? Select Music folder.</b> <br />
 		BlackPlayer uses the build-in Music library, therefore no excluding or including can be done. The Android system on your device manages the library and is shared amongst other Music players.<br />
 		If you really want to exclude folder. The Paid (EX) version can blacklist folders. <br />
 		The music scanner scans and adds new Tracks automatically. It might take a while for the tracks to appear. It is recommended that you use the 'Music' folder to store Music.<br />
@@ -149,7 +152,7 @@
 		
 		<br />
 		
-		<h4><a id="AudioFormat">Audio Formats, Crossfading, Equalizer</a></h4>
+		<h3><a id="AudioFormat">Audio Formats, Crossfading, Equalizer</a></h3>
 		
 		<b>- Why is not Crossfading supported/working on my device?</b> <br />
 		The crossfading is not supported on devices running Qualcomm® Snapdragon™ 800 series and higher, due to the audio hardware decoder. All other devices should be supported. However if you are using Bluetooth audio crossfading should work fine. 
@@ -236,7 +239,7 @@
 		
 		<a href="#Index"><h4>Go to Top</h4></a>
 		
-		<h4><a id="Lyrics">Lyrics</a></h4>
+		<h3><a id="Lyrics">Lyrics</a></h3>
 		<b>- How do I show Lyrics? The 'Lyrics' button is missing in Now Playing, how to get it back?</b> <br />
 		Only embedded lyrics are supported. Tap on the Album cover in Now Playing page to show the "Quick Actions". Tap on "Lyrics" or long press on any action and select "Show Lyrics" if you cannot see the 'Lyrics' action.<br />
 		
@@ -263,15 +266,17 @@
 		<br />
 		
 		
-		<h4><a id="AlbumArtist">Album Artist support</a></h4>
+		<h3><a id="AlbumArtist">Album Artist support</a></h3>
 		<br />
 		
 		<b>- Please add support for "ALBUM ARTIST" tag. Where do I enable the "Album Artists"?</b> <br />
 		BlackPlayer uses the build-in music library, and the build-in music library unfortunately does not support the "ALBUM ARTIST" tag/table. <br />
 		Since the library is build-in into every phone, I cannot remotely add support for it. <br />
+		<br />
+		If you want to reduce the number of Artists, we recommend you to enable 'Hide Small Artists', found by tapping on the ARTISTS title, or in Metadata settings. <br />
 		
 		
-		<h4><a id="Lockscreen">Lockscreen</a></h4>
+		<h3><a id="Lockscreen">Lockscreen</a></h3>
 		
 		<b>- Where is the lockscreen support? I don't see any. The lockscreen is not working!</b> <br />
 		Lockscreen controls is unfortunately only supported on some Android 4.0+ devices and manufactures. BlackPlayer uses the standard media remote controls same as other applications.<br />
@@ -286,7 +291,7 @@
 		If you see a "BlackPlayer" "Content hidden" notification, this is due to the new notification privacy setting. <br />
 		<br />
 		
-		<h4><a id="AlbumCover">Album Cover</a></h4>
+		<h3><a id="AlbumCover">Album Cover</a></h3>
 		
 		<b>- Album covers keep disappearing (gets removed) (after reboot). </b> <br />
 		This is a known bug with the album cover management for some phone models.<br />
@@ -316,7 +321,7 @@
 		and then manually change the cover of the new Album. <br />
 		<br />
 		
-		<h4><a id="Translation">Translation</a></h4>
+		<h3><a id="Translation">Translation</a></h3>
 		
 		<b>- Why is BlackPlayer not available in my language? The translations are bad or contains wrong words.</b> <br />
 		oneskyapp is used to manage the translations and everyone is allowed to help out with the translations.<br />
@@ -325,7 +330,7 @@
 		
 		<br />
 		
-		<h4><a id="TagEditing">File Tag Editing / Delete</a></h4>
+		<h3><a id="TagEditing">File Tag Editing / Delete</a></h3>
 		
 		<b>- My file cannot be edited? Error!? </b> <br />
 		Some music files have damaged ID3 tags and cannot be edited. <br />
@@ -351,7 +356,7 @@
 		
 		<a href="#Index"><h4>Go to Top</h4></a>
 		
-		<h4><a id="NowPlaying">Now Playing</a></h4>
+		<h3><a id="NowPlaying">Now Playing</a></h3>
 		
 		<b>- Where are the "Quick Action" ?</b> <br />
 		Tap on the the Album cover to show 3 or 4 quick actions. Each action can be changed by long pressing on them.<br />
@@ -382,7 +387,7 @@
 		
 		<br />
 		
-		<h4><a id="EX">BlackPlayer EX</a></h4>
+		<h3><a id="EX">BlackPlayer EX</a></h3>
 		
 		<b>- I just bought the EX version, have licensing Error! Cannot verify license.</b> <br />
 		Try these steps to troubleshoot the issue. Email the developer if you are still receiving errors: <br />
@@ -397,7 +402,7 @@
 		* Try signing into https://wallet.google.com/manage to verify that the app is not 'refunded' nor 'cancelled.'  <br />
 		* If you are still seeing the "application not licensed message", visit Google Support (https://support.google.com/googleplay/?rd=1#contact=1 ) and indicate what you have already done to troubleshoot the issue. Because this issue is related to Google’s licensing mechanism (LVL, License Verification Library) they should be able to help you. <br />
 		
-		<h4><a id="Interface">Interface, Themes</a></h4>
+		<h3><a id="Interface">Interface, Themes</a></h3>
 		
 		<b>- Where are the "Quick Action(s)" ?</b> <br />
 		Tap on the the Album cover to show 3 (or 4 for tablet) quick actions. Each action can be changed by long pressing on them and selecting a new action.<br />
@@ -419,7 +424,7 @@
 		
 		
 		
-		<h4><a id="Tips">Tips n' Tricks, Help</a></h4>
+		<h3><a id="Tips">Tips n' Tricks, Help</a></h3>
 		
 		<b>- Now Playing</b> <br />
 		Almost all items can be pressed and long-pressed! Examples:<br />
@@ -436,7 +441,7 @@
 		<b>- Library </b> <br />
 		* All Artists, Tracks and Albums can be long pressed to open a dialog with many actions. <br />
 		 
-		* (Exclusive Only) The navigation items at the top can be pressed to show a few settings depending on the current page. If you long press on them "Manage Library Pages" will open.<br />
+		* The navigation text (ARTISTS, TRACKS, PLAYLISTS etc) at the top can be pressed to show settings depending on the current page. (EXCLUSIVE ONLY) If you long press on them "Manage Library Pages" will open.<br />
 		 <br />
 		
 		<b>- Album dialog </b> <br />
@@ -452,7 +457,7 @@
 		 <br />
 		
 		
-		<h4><a id="Permissions">Permissions</a></h4>
+		<h3><a id="Permissions">Permissions</a></h3>
 		
 		<b>- Why does the paid (EX) version requires to listen to my microphone?</b> <br />
 		The Microphone permission is only for the visualizer to listen to the audio, if you are not using it you can block the permission if you are able to do so. <br />
@@ -471,8 +476,15 @@
 		
 		<br />
 		
+		<b>- Why require SYSTEM_ALERT_WINDOW (or Draw over other Apps) permission?</b> <br />
+		This is required for the custom Lockscreen and floating mini control to work.<br />
+		If you are not using any features you may block this permisson. <br />
 		
-		<h4><a id="Beta">Beta Testing Program</a></h4>
+		
+		<br />
+		
+		
+		<h3><a id="Beta">Beta Testing Program</a></h3>
 		
 		<b>- I just joined the BETA program, but I did not receive any new Beta version!</b> <br />
 		A beta version is not always available, if you have not received an new update after couple of hours then there probably is no Beta version out for testing. <br />
@@ -488,7 +500,7 @@
 		<br />
 		
 		
-		<h4><a id="Notification">Notification</a></h4>
+		<h3><a id="Notification">Notification</a></h3>
 		
 		
 		<b>- Cannot see the notification text or buttons. The buttons have wrong colors</b> <br />
@@ -498,8 +510,15 @@
 		
 		<br />
 		
+		<b>- The Notification is removed when I pause the music!!</b> <br />
+		First open the notification settings. <br />
+		Open Settings -> Remote -> Scroll down to Notification. <br />
+		Disable 'Swipe Remove'. This usually fixes the issue.<br />
 		
-		<h4><a id="Navigation">Navigation</a></h4>
+		<br />
+		
+		
+		<h3><a id="Navigation">Navigation</a></h3>
 		
 		
 		<b>- Cannot move (navigate) to the previous page, only move forward (By tapping on the top bar)! App get stuck at 'GENRES'.</b> <br />
@@ -508,7 +527,7 @@
 		<br />
 		
 		
-		<h4><a id="Widget">Cannot see BlackPlayer widgets! (I also just moved the app to SD-card)</a></h4>
+		<h3><a id="Widget">Cannot see BlackPlayer widgets! (I also just moved the app to SD-card)</a></h3>
 		
 		Widgets from apps stored on the SD-card cannot be displayed. This is an Android limitation, move the app back to the Internal storage. Google 'android widgets on sd card' for more information.<br />
 		If you don't have the App on the SD-card you can also try restarting your device, it might fix the issue. <br />
@@ -519,7 +538,7 @@
 		
 		<a href="#Index"><h4>Go to Top</h4></a>
 		<br />
-		Last updated: 2016-12-06
+		Last updated: 2017-02-28
 	</body>
 
 </html>
