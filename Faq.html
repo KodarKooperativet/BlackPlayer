@@ -25,7 +25,7 @@
 		
 		<a href="#Playlists">	<h4>1. Playlists, Recently Added Tracks, Remove Tracks from Playlist</h4></a>
 		<a href="#Library">		<h4>2. Library, Missing Tracks, Use as Ringtone, Hide Tracks (voice record, notifications). Exclude/Include Folder</h4></a>
-		<a href="#AudioFormat">	<h4>3. Supported Audio formats (WMA,ALAC,M4A,cue support),Crossfading, External Apps, Playback, Equalizer, Audio effects.</h4></a>
+		<a href="#AudioFormat">	<h4>3. Supported Audio formats (WMA,ALAC,M4A,cue support),Crossfading, Gapless, External Apps, Playback, Equalizer, Audio effects.</h4></a>
 		<a href="#Lyrics">		<h4>4. Lyrics, missing 'Lyrics' button.</h4></a>
 		<a href="#AlbumArtist">	<h4>5. Album-Artist support</h4></a>
 		<a href="#Lockscreen">	<h4>6. Lockscreen</h4></a>
@@ -64,6 +64,10 @@
 		The Playlists comes without any guarantees, you should keep your important Playlists backed-up using BlackPlayer or 3rd party app.<br />
 		The Playlists may be cleared/deleted automatically by the Android system when you unmount the SD-card, restart your device or add new music. <br />
 		This is not a bug of BlackPlayer, instead its your device that does this, you can report this bug to your device manufacturer.<br />
+		If you are going to unmount the SD-card and want the Playlists safe you can Export all Playlists by tapping on the 'PLAYLISTS' title 
+		at the top and selecting 'Export all Playlists'.<br />
+		The Playlists are then stored in the Playlist folder in BlackPlayer folder on the External storage.<br />
+		
 		
 		<br />
 		
@@ -143,7 +147,7 @@
 		The easiest way is to open https://play.google.com/music/ on your computer. From there you can download your music to your computer as MP3 files (Note that this can only be done twice per track).<br />
 		Connect your device to the computer and transfer them as regular MP3 files to your music collection folder. <br />
 		<br />
-		The tracks downloaded from the Google Music android app are stored in \Android\data\com.google.android.music\files\music and contains no tag information. They need to be moved in order to BlackPlayer to detect them.<br />
+		The tracks downloaded from the Google Music Android app are stored in \Android\data\com.google.android.music\files\music and contains no tag information. They need to be moved in order to BlackPlayer to detect them.<br />
 		
 		<br />
 		
@@ -157,6 +161,12 @@
 		<b>- Why is not Crossfading supported/working on my device?</b> <br />
 		The crossfading is not supported on devices running Qualcomm® Snapdragon™ 800 series and higher, due to the audio hardware decoder. All other devices should be supported. However if you are using Bluetooth audio crossfading should work fine. 
 		The issues with crossfading is the reason why the features is included in the free version.<br />
+		
+		<br />
+		
+		<b>- Gapless is not working on my device! Gapless troubleshooting.</b> <br />
+		- Same issue as the crossfading, Gapless is not working on some devices due to the build-in audio hardware decoder. However if you are using Bluetooth audio Gapless should work fine.<br />
+		- Make sure the tracks are optimized for gapless playback. I.e. there should be no pauses in sound between the two tracks.<br />
 		
 		<br />
 		
@@ -283,7 +293,7 @@
 		Your device manufacture must implement the support for the lockscreen to be able to use it.<br />
 		* Huawei and Samsung is known to not support the music lockscreen widget, other than their own music app.<br />
 		As of BlackPlayer Free 2.35 or EX 20.29 you can use the Custom lockscreen. Activate it in Remote settings. <br />
-		The permission 'Draw over other Apps' (SYSTEM_ALERT_WINDOW) must be enabled for it to work.<br />
+		The permission 'Draw over other Apps' (SYSTEM_ALERT_WINDOW) must be enabled for it to work. Check this if it does not work for you.<br />
 		<br />
 		
 		<b>- I just Updated to (or I am running) Android 5.0 Lollipop and my Lockscreen controls is missing. </b> <br />
@@ -341,7 +351,8 @@
 		<br />
 		
 		<b>- My tags keeps resetting back.</b> <br />
-		See above answer. Most likely due to cannot write to file. This issue however could happen on other cases also, unknown cause. <br />
+		See above answer. Most likely due to cannot write to file. This issue however could happen on other cases also, unknown cause.<br />
+		Im currently investigating this issue.<br />
 		
 		<br />
 		
@@ -515,6 +526,7 @@
 		First open the notification settings. <br />
 		Open Settings -> Remote -> Scroll down to Notification. <br />
 		Disable 'Swipe Remove'. This usually fixes the issue.<br />
+		If you are using Android 7.0+, try also disabling 'Nougat Style'.<br />
 		
 		<br />
 		
@@ -540,7 +552,7 @@
 		
 		<a href="#Index"><h4>Go to Top</h4></a>
 		<br />
-		Last updated: 2017-02-28
+		Last updated: 2017-05-18
 	</body>
 
 </html>
