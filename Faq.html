@@ -25,7 +25,7 @@
 		
 		<a href="#Playlists">	<h4>1. Playlists, Recently Added Tracks</h4></a>
 		<a href="#Library">		<h4>2. Library, Missing Tracks, Use as Ringtone, Hide Tracks (voices, notifications). Exclude/Include Folder</h4></a>
-		<a href="#AudioFormat">	<h4>3. Supported Audio formats (WMA,ALAC,M4A,cue support),Crossfading, Gapless, External Apps, Playback, Equalizer, Audio effects.</h4></a>
+		<a href="#AudioFormat">	<h4>3. Supported Audio formats (WMA,ALAC,M4A,cue support),Crossfading, Gapless, External Apps, Playback, Equalizer, Audio effects. Audio Playback problems</h4></a>
 		<a href="#Lyrics">		<h4>4. Lyrics, missing 'Lyrics' button.</h4></a>
 		<a href="#AlbumArtist">	<h4>5. Album-Artist support</h4></a>
 		<a href="#Lockscreen">	<h4>6. Lockscreen</h4></a>
@@ -152,7 +152,7 @@
 		<br />
 		
 		
-		<b>- The tracks in the main 'TRACKS' list are not sorted correctly. Ignore 'the' when sorting. </b> <br />
+		<b>- The tracks in the main 'TRACKS' list are not sorted correctly. Ignore 'the' or 'a' when sorting. </b> <br />
 		The issue with wrong sorting, usually resolves itself after awhile or restarting your devices.<br />
 		If you want a quickfix you can try enabling 'Force A-Z sorting' in Advanced Settings. <br />
 		By default the sorting ignore 'a' and 'the' words, if you do not like this you can also try enabling 'Force A-Z' sorting.<br />
@@ -165,7 +165,7 @@
 		
 		<br />
 		
-		<h3><a id="AudioFormat">Audio Formats, Crossfading, Equalizer</a></h3>
+		<h3><a id="AudioFormat">Supported Audio formats, Crossfading, Equalizer, Gapless</a></h3>
 		
 		<b>- Why is not Crossfading supported/working on my device?</b> <br />
 		The crossfading is not supported on devices running Qualcomm® Snapdragon™ 800 series and higher, due to the audio hardware decoder. All other devices should be supported. However if you are using Bluetooth audio crossfading should work fine. 
@@ -179,9 +179,25 @@
 		
 		<br />
 		
+		<b>- Playing Music does not work. Playback not working. Strange issues with playing music</b> <br />
+		Check that you have Crossfading disabled, this does not work on many devices. Most users have issues with this.<br />
+		Try restart BlackPlayer and your device.<br />
+		
+		<br />
+		
 		<b>- The volume jumps up for a second when changing to a new track. </b> <br />
 		This is a known bug and its caused when you have both crossfading and some sound-effects enabled. Turn off one of them.<br />
 		All sound-effects must be turned off for the crossfading to work properly. <br />
+		
+		<br />
+		
+		<b>- I get 'Hardware Error' or 'Bass boost not supported' when using Equalizer or Bass Boost </b> <br />
+		This is caused due to hardware or software issue on your device. There can be many different problems that can cause this. <br />
+		- The sound effect might already in use by other program. If you have system global Sound effects try disabling them.<br />
+		- Restarting your device solves the issue in many cases.<br />
+		- If you are using a Custom ROM the Sound effects might be broken.<br />
+		- Try changing to the 'Stock Equalizer' in Audio Settings.<br />
+		
 		
 		<br />
 		
@@ -198,13 +214,9 @@
 		
 		<br />	
 		
-		<b>- Equalizer turns off immediately after leaving the Equalizer page! </b> <br />
-		Try turning off the "Fix Equalizer turning off" in Audio Setting. You can also try using the Stock Equalizer instead in Audio settings, this usually works much better. <br />
-		
-		<br />
-		
 		<b>- The Volume Spikes (very loud) after turning the Equalizer on (or resuming music)! The volume is increased suddenly! </b> <br />
 		This is a known bug in Android. Use the Stock (build-in) Equalizer instead. Change it in Audio settings -> Select Equalizer. Or dont use BlackPlayer equalizer at all. <br />
+		Many Motorola devices are known to have this bug.<br />
 		
 		<br />
 		
@@ -242,9 +254,9 @@
 	
 		<br />		
 		
-		<b>- Play music when playing games. Don't pause music on notifications </b> <br />
+		<b>- Play music when playing games. Don't pause music on notifications. Music is paused when playing Games.</b> <br />
 		Change 'Audio focus level' in Audio Settings -> More.. to 'Ignore All'. 
-		Remember to change it back when you are done, BlackPlayer will otherwise continue to Play on incoming notifications.<br />
+		Remember to change it back when you are done, BlackPlayer will otherwise continue to Play on incoming notifications and while playing videos.<br />
 	
 		<br />		
 		
@@ -253,6 +265,11 @@
 		Your bluetooth device sends out a 'Play' command when connected and BlackPlayer will ignore this if it is not running. <br />
 	
 		<br />	
+		
+		<b>- Equalizer turns off immediately after leaving the Equalizer page! </b> <br />
+		Try turning off the "Fix Equalizer turning off" in Audio Setting. You can also try using the Stock Equalizer instead in Audio settings, this usually works much better. <br />
+		
+		<br />
 		
 		
 		
@@ -584,7 +601,7 @@
 		
 		<a href="#Index"><h4>Go to Top</h4></a>
 		<br />
-		Last updated: 2017-06-12
+		Last updated: 2017-06-16
 	</body>
 
 </html>
