@@ -29,7 +29,7 @@
 		<a href="#Lyrics">		<h4>4. Lyrics, missing 'Lyrics' button.</h4></a>
 		<a href="#AlbumArtist">	<h4>5. Album-Artist support</h4></a>
 		<a href="#Lockscreen">	<h4>6. Lockscreen</h4></a>
-		<a href="#AlbumCover">	<h4>7. Album Cover & Thumbnails. (Wrong Album cover showing)</h4></a>
+		<a href="#AlbumCover">	<h4>7. Album Cover & Thumbnails. (Wrong Album cover showing, Multiple Albums same cover)</h4></a>
 		<a href="#Translation">	<h4>8. Translation</h4></a>
 		<a href="#TagEditing">	<h4>9. Tag Editing, Lyrics editing, Delete tracks (Can't Delete/Edit)</h4></a>
 		<a href="#NowPlaying">	<h4>10. Now Playing</h4></a>
@@ -354,11 +354,11 @@
 		
 		<br />
 		
-		<b>- All tracks in an Album get the wrong image. (image of another Album)</b> 
+		<b>- All tracks in an Album get the wrong image. (image of another Album) Albums get SAME cover.</b> 
 		<br />
 		If a track does not have an image it usually get the image from the folder or from the same Album. Make sure the Album tag is correct.<br />
-		Separate each Album by folder and place the Album cover as an image in each folder. 
-		<br />
+		Separate each Album by folder and place the Album cover as an image in each folder.<br />
+		Check the folder for an image, if one cover.jpg file is placed in the folder of many albums, all of these might get this image as Album cover.<br />
 		
 		<br />
 		
@@ -366,6 +366,12 @@
 		<br />
 		The Album covers are currently connected to the Album that the Track has. If you want Track unique Album covers you have to split up the Track from the Album (by changing the Album title) 
 		and then manually change the cover of the new Album. <br />
+		<br />
+		
+		<b>- How to disable Artist images? I want to prevent downloading of Artist images. </b><br />
+		Disable 'Internet Content' in Metadata settings and Artist images will not auto download.<br />
+		The downloaded images are stored in the BlackPlayer folder on the Internal Storage.<br />
+		
 		<br />
 		
 		<h3><a id="Translation">Translation</a></h3>
@@ -611,7 +617,7 @@
 		
 		<a href="#Index"><h4>Go to Top</h4></a>
 		<br />
-		Last updated: 2017-06-16
+		Last updated: 2017-06-29
 	</body>
 
 </html>
