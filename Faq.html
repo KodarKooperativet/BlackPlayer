@@ -24,7 +24,7 @@
 		<!-- Categories -->
 		
 		<a href="#Playlists">	<h4>1. Playlists, Recently Added Tracks</h4></a>
-		<a href="#Library">		<h4>2. Library, Missing Tracks, Use as Ringtone, Hide Tracks (voices, notifications). Exclude/Include Folder. Multiple Albums Tracks on Album with same Title</h4></a>
+		<a href="#Library">		<h4>2. Library, Missing Tracks, Use as Ringtone, Hide Tracks (voices,ringtone,notifications). Exclude/Include Folder. Multiple Albums Tracks on Album with same Title</h4></a>
 		<a href="#AudioFormat">	<h4>3. Supported Audio formats (WMA,ALAC,M4A,cue support),Crossfading, Gapless, External Apps, Playback, Equalizer, Audio effects. Audio Playback problems</h4></a>
 		<a href="#Lyrics">		<h4>4. Lyrics, missing 'Lyrics' button.</h4></a>
 		<a href="#AlbumArtist">	<h4>5. Album-Artist support</h4></a>
@@ -105,13 +105,16 @@
 		* Try enabling 'Hide Short Tracks' in Settings -> Metadata, and make sure 'Show All Audio files' is disabled.<br />
 		* Adding a '.nomedia' file in the Folder of the Tracks you want to hide will cause the Scanner to skip it. However this might take time until the scanner picks up this change, you can speed up the process by moving(or renaming) the folder.<br />
 		* BlackPlayer EX has blacklisting option where you can hide Tracks and Folders of choice from being displayed. <br />
+		You can also switch to the new Custom Audio library, this allows you to manually select Music folder and more control over scanning. Switch to this in Advanced settings.<br />
+		
 		
 		<br />
 		
 		<b>- How to add Tracks? Exclude folders from Library? Select Music folder.</b> <br />
-		BlackPlayer uses the build-in Music library, therefore no excluding or including can be done. The Android system on your device manages the library and is shared amongst other Music players.<br />
+		BlackPlayer by default uses the build-in Music library, therefore no excluding or including can be done. The Android system on your device manages the library and is shared amongst other Music players.<br />
 		If you really want to exclude folder. The Paid (EX) version can blacklist folders. <br />
 		The music scanner scans and adds new Tracks automatically. It might take a while for the tracks to appear. It is recommended that you use the 'Music' folder to store Music.<br />
+		You can also switch to the new Custom Audio library, this allows you to manually select Music folder and more control over scanning. Switch to this in Advanced settings.<br />
 		
 		<br />
 		
@@ -174,8 +177,9 @@
 		This is brand new audio library that is customly made to fit BlackPlayer needs for reliability and performance.<br />
 		It fixes issues with Playlist, Favorites and dissappearing Album covers.<br />
 		In addition more features will be available when using this also over time.<br />
-		Playlists will not be removed when you unmount(remove) your SD-card however they will be removed if you uninstall BlackPlayer since they are stored within the app. Playlists backups are by default BlackPlayer settings run in the background.<br />
+		Playlists will not be removed when you unmount(remove) your SD-card however they will be removed if you uninstall or clear app data of BlackPlayer since they are stored within the app. Playlists backups are by default run in the background.<br />
 		To enable the Custom audio library, Enter Advanced Setting and Enable 'Beta Test New Library'. This will enable the 'Audio Library' tab found in the left sliding menu. Enter there and enable the new library.<br />
+		The new library also fixes issues with 'Error Adding to Favorites'<br />
 		
 		<br />
 		
@@ -305,12 +309,19 @@
 		
 		<h3><a id="Lyrics">Lyrics</a></h3>
 		<b>- How do I show Lyrics? The 'Lyrics' button is missing in Now Playing, how to get it back?</b> <br />
-		Only embedded lyrics are supported. Tap on the Album cover in Now Playing page to show the "Quick Actions". Tap on "Lyrics" or long press on any action and select "Show Lyrics" if you cannot see the 'Lyrics' action.<br />
+		Tap on the Album cover in Now Playing page to show the "Quick Actions". Tap on "Lyrics" or long press on any action and select "Show Lyrics" if you cannot see the 'Lyrics' action.<br />
 		
 		<br />
 		
 		<b>- How do I embed Lyrics?</b> <br />
 		BlackPlayer can embed lyrics manually from the Tag edit dialog in each track or from the "Edit Lyrics" quick action. <br />
+		
+		<br />
+		
+		<b>- What Lyrics are supported?</b> <br />
+		BlackPlayer supports embedded and external lyrics. The external lyrics should have the same filename as the music file but with .lrc file extension and in the same folder.<br />
+		BlackPlayer supports both synchronized and unsynchronized lyrics. Read more about .lrc file format here:<br />
+		<a href="https://en.wikipedia.org/wiki/LRC_(file_format)">https://en.wikipedia.org/wiki/LRC_(file_format)</a><br />
 		
 		<br />
 		
@@ -334,10 +345,10 @@
 		<br />
 		
 		<b>- Please add support for "ALBUM ARTIST" tag. Where do I enable the "Album Artists"?</b> <br />
-		BlackPlayer uses the build-in music library, and the build-in music library unfortunately does not support the "ALBUM ARTIST" tag/table. <br />
-		Since the library is build-in into every phone, I cannot remotely add support for it. <br />
-		<br />
+		BlackPlayer uses the build-in music library, and the build-in music library unfortunately does not support the "ALBUM ARTIST" tag/table. <br />However you can switch to the new 'Custom Audio Library' in Advanced Settings that supports this feature! Try it out!
 		If you want to reduce the number of Artists, we recommend you to enable 'Hide Small Artists', found by tapping on the ARTISTS title, or in Metadata settings. <br />
+		<br />
+	
 		
 		
 		<h3><a id="Lockscreen">Lockscreen</a></h3>
@@ -656,7 +667,7 @@
 		<a href="#Index"><h4>Go to Top</h4></a>
 		<br />
 		
-		Last updated: 2018-02-15
+		Last updated: 2018-04-12
 	</body>
 
 </html>
