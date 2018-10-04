@@ -23,18 +23,18 @@
 		
 		<!-- Categories -->
 		
-		<a href="#Playlists">	<h4>1. Playlists, Recently Added Tracks, Error adding Favorite</h4></a>
+		<a href="#Playlists">	<h4>1. Playlists, Recently Added</h4></a>
 		<a href="#Library">		<h4>2. Library, Missing Tracks, Use as Ringtone, Hide Tracks (voices,ringtone,notifications). Exclude/Include Folder. Multiple Albums Tracks on Album with same Title</h4></a>
-		<a href="#AudioFormat">	<h4>3. Supported Audio formats (WMA,ALAC,M4A,cue support),Crossfading, Gapless, External Apps, Playback, Equalizer, Audio effects. Audio Playback problems</h4></a>
+		<a href="#AudioFormat">	<h4>3. Audio formats (WMA,ALAC,M4A,cue),Crossfading, Gapless, External Apps, Playback issues, Equalizer, Audio effects</h4></a>
 		<a href="#Lyrics">		<h4>4. Lyrics, missing 'Lyrics' button. Cannot Add Lyrics</h4></a>
 		<a href="#AlbumArtist">	<h4>5. Album-Artist support</h4></a>
 		<a href="#Lockscreen">	<h4>6. Lockscreen</h4></a>
-		<a href="#AlbumCover">	<h4>7. Album Cover & Thumbnails. (Wrong Album cover showing, Multiple Albums SAME cover)</h4></a>
+		<a href="#AlbumCover">	<h4>7. Album Cover & Thumbnails. (Wrong cover showing, Multiple Albums SAME cover)</h4></a>
 		<a href="#Translation">	<h4>8. Translation</h4></a>
-		<a href="#TagEditing">	<h4>9. Tag Editing, Lyrics editing, Delete tracks (Can't Delete/Edit)</h4></a>
+		<a href="#TagEditing">	<h4>9. Tag Edit, Lyrics edit, Delete music (Can't Delete/Edit)</h4></a>
 		<a href="#NowPlaying">	<h4>10. Now Playing. Share #NowPlaying. Screen Always On. Streched Album Cover.</h4></a>
 		<a href="#EX">			<h4>11. BlackPlayer EX. Cannot Install. License Error. Payment problems</h4></a>
-		<a href="#Interface">	<h4>12. Interface, Themes, Show Sleep Timer, Hide/Edit Artist Biography</h4></a>
+		<a href="#Interface">	<h4>12. Interface, Themes, Show SLEEP TIMER, Hide/Edit Artist Biography</h4></a>
 		<a href="#Tips">		<h4>13. Tips n' Tricks, Battery settings</h4></a>
 		<a href="#Permissions">	<h4>14. Permissions</h4></a>
 		<a href="#Beta">		<h4>15. Beta Testing Program</h4></a>
@@ -58,7 +58,7 @@
 		<br />
 		To Export a Playlist, long press on the Playlist you want to Export and select 'Export' from the list. The playlist will be exported in .m3u file to the root of the Internal storage. <br />
 		You can also try switching to the New custom Audio library, this is done in Advanced settings.<br />
-		
+		If you are getting an 'Error cannot read file' you can try using the build-in BlackPlayer importer. This is found my long-pressing on the 'Import' button at the bottom of the 'PLAYLISTS' page.<br />
 		<br />
 		
 		<b>- I get 'Error Adding to Favorites'!</b> <br />
@@ -98,6 +98,14 @@
 		
 		<br />
 		
+		<b>- How is the Playlists stored?</b> <br />
+		BlackPlayer always tries its best to keep a backup of your Playlists as .m3ubackup files stored in the BlackPlayer/Playlists folder.<br />
+		If you are using the 'Build in Android library' the Playlists are stored in a database on your phone, which your phone manages.<br />
+		If you are using 'BlackPlayer Custom Library', the playlists are stored in the app. If you clear the App-data of BlackPlayer these playlists might be lost if there is no external m3u playlist file or m3uBackup file.<br />
+		Check which Audio library you are using in Metadata Settings category.<br />
+		
+		<br />
+		
 		<h3><a id="Library">Library, Missing Tracks, Use as Ringtone</a></h3>
 		
 		<b>- Why cannot I see my tracks stored on SD-card? Scan my SD-card? How to update Library? I cannot see my newly added Tracks!</b> <br />
@@ -113,8 +121,8 @@
 		* Try enabling 'Hide Short Tracks' in Settings -> Metadata, and make sure 'Show All Audio files' is disabled.<br />
 		* Adding a '.nomedia' file in the Folder of the Tracks you want to hide will cause the Scanner to skip it. However this might take time until the scanner picks up this change, you can speed up the process by moving(or renaming) the folder.<br />
 		* BlackPlayer EX has blacklisting option where you can hide Tracks and Folders of choice from being displayed. <br />
-		You can also switch to the new Custom Audio library, this allows you to manually select Music folder and more control over scanning. Switch to this in Advanced settings.<br />
-		
+		* Switch to the new Custom Audio library, this allows you to manually select Music folder and more control over scanning. Switch to this in Advanced settings or Metadata Settings in newer versions.<br />
+	
 		
 		<br />
 		
@@ -133,6 +141,18 @@
 		The 'Media Storage' app might be called something else if you have any other language than English. <br />
 		If you can't find it you might need to enable 'Show System apps' in an overflow (3dots) icon. <br />
 		If you are using 'BlackPlayer Custom Library' you can reset the Audio database in BlackPlayer Custom library settings.<br />
+		
+		<br />
+		
+		
+		<b>- Blacklisting is not working. How to Blacklist (hide) music? Blacklisting is missing!! </b> <br />
+		This feature is only available in BlackPlayer EX and using the 'Android Standard Library'.<br />
+		Make sure 'Enable Blacklisting' is turned on in Metadata settings. <br />
+		Go to the main 'FOLDERS' view in Library, long press on the Folder you want to Blacklist, select 'Add to Blacklist'
+		from the list. The Tracks in the Folder will then be added to the blacklist. <br />
+		You can also blacklist single Tracks by long-pressing on them and selecting 'Add to Blacklist'.<br />
+		In order to hide the Albums and Artists of the blacklisted Tracks, you must start a 'Auto Blacklist Artists & Albums' in Metadata settings.<br />
+		You can also switch to the new BlackPlayer Custom library, where you can manually select which folders to scan from. If you are using BlackPlayer EX and Blacklisting is missing from the Settings that means you are using the new BlackPlayer Custom library.<br />
 		
 		<br />
 		
@@ -163,18 +183,6 @@
 		
 		<br />
 		
-		
-		<b>- Blacklisting is not working. How to Blacklist (hide) music? </b> <br />
-		This feature is only available in BlackPlayer EX.<br />
-		Make sure 'Enable Blacklisting' is turned on in Metadata settings. <br />
-		Go to the main 'FOLDERS' view in Library, long press on the Folder you want to Blacklist, select 'Add to Blacklist'
-		from the list. The Tracks in the Folder will then be added to the blacklist. <br />
-		You can also blacklist single Tracks by long-pressing on them and selecting 'Add to Blacklist'.<br />
-		In order to hide the Albums and Artists of the blacklisted Tracks, you must start a 'Auto Blacklist Artists & Albums' in Metadata settings.<br />
-		You can also switch to the new BlackPlayer Custom library, where you can manually select which folders to scan from. If you are using BlackPlayer EX and Blacklisting is missing from the Settings that means you are using the new BlackPlayer Custom library.<br />
-		
-		<br />
-		
 		<b>- The tracks in the main 'TRACKS' list are not sorted correctly. Ignore 'the' or 'a' when sorting. </b> <br />
 		The issue with wrong sorting, usually resolves itself after awhile or restarting your devices.<br />
 		If you want a quickfix you can try enabling 'Force A-Z sorting' in Advanced Settings. <br />
@@ -182,7 +190,7 @@
 		
 		<br />
 		
-		<b>- What is the 'Custom Audio Library' and why should I use it?</b> <br />
+		<b>- What is the 'BlackPlayer Custom Audio Library' and why should I use it?</b> <br />
 		This is brand new audio library that is customly made to fit BlackPlayer needs for reliability and performance.<br />
 		It fixes issues with Playlist, Favorites and dissappearing Album covers.<br />
 		In addition more features will be available when using this also over time.<br />
@@ -203,6 +211,7 @@
 		<b>- Why is not Crossfading supported/working on my device?</b> <br />
 		The crossfading is not supported on devices running Qualcomm® Snapdragon™ 800 series and higher, due to the audio hardware decoder. All other devices should be supported. However if you are using Bluetooth audio crossfading should work fine. 
 		The issues with crossfading is the reason why the features is included in the free version.<br />
+		Please also turn off the Equalizer and all Sound-effects, they disturb the crossfading.<br />
 		
 		<br />
 		
@@ -272,21 +281,23 @@
 		<br />
 		
 		<b>- How does the sorting works?</b> <br />
+		Sortings found in the library by tapping on the top titles 'ARTIST' or 'TRACKS' for example. In the browser pages (single Artist) its found in the overflow (3 dots) button.<br />
 		The main Track list, Artist tracks and Genre tracks can be sorted many ways. The current sorting affects all of the tracks list. For example selecting a specific Genre track sorting applies to all Genre tracks no matter the genre. <br />
 		The Playlist track sorting are Playlist individual and are permantent. <br />
 		
 		<br />
 		
 		<b>- My external Lyrics-app, Lockscreen/Widget-app, Scrobbler is not working!</b> <br />
-		Enable "Broadcast Now Playing" or "Broadcast Play-queue" in Metadata settings.<br />
+		Enable "Broadcast Now Playing" or "Broadcast Play-queue" in Metadata settings this usually fixes the issue.<br />
 	
 		<br />
 		
-		<b>- Music is Stops when Screen is turned Off. Directly or after some while.</b> <br />
+		<b>- BlackPlayer get KILLED in background!! Music is Stops when Screen is turned Off. Directly or after some while.</b> <br />
 		This is caused by your device enters power saving mode and stops BlackPlayer from running in the background. You should add BlackPlayer to the whitelist of you can find such a feature on your device. If you are using extra power saving mode 'Stamina mode' for example try turn that off.<br />
 		Also check if you have any external power saving app that might kill BlackPlayer while its running in the background.<br />
 		<br />
 		If you are using a Huawei device, this is called 'Protected Apps' in the Battery Manager and you should whitelist BlackPlayer there.<br />
+		Read more here:<a href="https://android.stackexchange.com/questions/152649/what-is-protected-apps-in-huawei-phones">https://android.stackexchange.com/questions/152649/what-is-protected-apps-in-huawei-phones</a>
 		
 		<br />
 		
@@ -354,7 +365,8 @@
 		<br />
 		
 		<b>- Please add support for "ALBUM ARTIST" tag. Where do I enable the "Album Artists"?</b> <br />
-		BlackPlayer uses the build-in music library, and the build-in music library unfortunately does not support the "ALBUM ARTIST" tag/table. <br />However you can switch to the new 'Custom Audio Library' in Advanced Settings that supports this feature! Try it out!<br />
+		BlackPlayer uses the build-in music library, and the build-in music library unfortunately does not support the "ALBUM ARTIST" tag/table. <br />
+		However you can switch to the new 'BlackPlayer Custom Library' in Metadata Settings that supports this feature! Try it out!<br />
 		If you want to reduce the number of Artists, I recommend you to enable 'Hide Small Artists', found by tapping on the ARTISTS title, or in Metadata settings. <br />
 		<br />
 	
@@ -368,6 +380,11 @@
 		* Huawei and Samsung is known to not support the music lockscreen widget, other than their own music app.<br />
 		As of BlackPlayer Free 2.35 or EX 20.29 you can use the Custom lockscreen. Activate it in Remote settings. <br />
 		The permission 'Draw over other Apps' (SYSTEM_ALERT_WINDOW) must be enabled for it to work. Check this if it does not work for you.<br />
+		<br />
+		
+		<b>- I am missing Album cover on my lockscreen!</b> <br />
+		Make sure 'Lockscreen Album Art' is enabled in Remote Settings -> Lockscreen.<br 7>
+		It's up to the device manufacturer to enable the cover to show up on the Lockscreen, I have no control over it. If you still want Album cover on the lockscreen you can use the Custom lockscreen found in Remote Settings.<br />
 		<br />
 		
 		<b>- I just Updated to (or I am running) Android 5.0 Lollipop and my Lockscreen controls is missing. </b> <br />
@@ -529,7 +546,7 @@
 		* Try signing into https://wallet.google.com/manage to verify that the app is not 'refunded' nor 'cancelled.'  <br />
 		* If you are still seeing the "application not licensed message", visit Google Support (https://support.google.com/googleplay/?rd=1#contact=1 ) and indicate what you have already done to troubleshoot the issue. Because this issue is related to Google’s licensing mechanism (LVL, License Verification Library) they should be able to help you. <br />
 		
-		
+		<br />
 		<b>- I want to change account for BlackPlayer EX! I want to move to a new Google account!</b> <br />
 		If you want to move your BlackPlayer EX license to another Google account, you need to buy the app again on the new account.<br />
 		Then send me the order number (transaction id) of the original (old) order and the order number of the new order.<br />
@@ -623,7 +640,7 @@
 		
 		<b>- I just joined the BETA program, but I did not receive any new Beta version!</b> <br />
 		A beta version is not always available, if you have not received an new update after couple of hours then there probably is no Beta version out for testing. <br />
-		Check the community news if there is any information about new Beta releases.<br />
+		Check the community news if there is any information about new Beta releases, also check if you are not already using a Beta version.<br />
 		
 		<br />
 		
@@ -676,7 +693,7 @@
 		<a href="#Index"><h4>Go to Top</h4></a>
 		<br />
 		
-		Last updated: 2018-08-17
+		Last updated: 2018-10-04
 	</body>
 
 </html>
