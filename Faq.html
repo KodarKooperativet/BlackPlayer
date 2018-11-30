@@ -258,15 +258,16 @@
 		
 		<br />
 		
-		<b>- Why cannot I see the Loudness Enhancer (Amplifier) ? Amplifier do not work on my device!</b> <br />
-		The Amplifier only works on Android 4.4+ and newer. It is not guaranteed to work on all devices, Its up to the hardware manufacture to implement it. 
-		Sometimes Amplifier only works using headphones and not the build-in speaker. It also might not work on custom ROMs.<br />
-		
-		<br />	
-		
 		<b>- The Volume Spikes (very loud) after turning the Equalizer on (or resuming music)! The volume is increased suddenly! </b> <br />
 		This is a known bug in Android. Use the Stock (build-in) Equalizer instead. Change it in Audio settings -> Select Equalizer. Or dont use BlackPlayer equalizer at all. <br />
 		Many Motorola devices are known to have this bug.<br />
+		
+		<br />
+		
+		<b>- The previous track button should reset the track to 0! How does the "Previous Track mode" work?</b> <br />
+		The setting is called 'Previous Track mode' and is available in Settings -> Audio -> scroll down abit. It has two modes: <br />
+		"Fast" (Default): Pressing previous track button (<<) jumps directly to the previous track. <br />
+		"Classic" : Resets the track if 3 seconds has passed on the track, otherwise move to the previous track.<br />
 		
 		<br />
 		
@@ -281,10 +282,10 @@
 		
 		<br />
 		
-		<b>- The previous track button should reset the track to 0! How does the "Previous Track mode" work?</b> <br />
-		The setting is called 'Previous Track mode' and is available in Settings -> Audio -> scroll down abit. It has two modes: <br />
-		"Fast" (Default): Pressing previous track button (<<) jumps directly to the previous track. <br />
-		"Classic" : Resets the track if 3 seconds has passed on the track, otherwise move to the previous track.<br />
+		
+		<b>- I want to Music to keep playing while in Phone call!</b> <br />
+		You can do this. You need to block BlackPlayer's 'Phone call' permission in the Phone System Settings -> Apps -> Blackplayer.<br />
+		Also change 'Audio focus' level to 'Ignore All' in BlackPlayer Settings -> Audio -> More.. Note that this will might cause music to continue playing if you disconnect your earphones.<br />
 		
 		<br />
 		
@@ -304,7 +305,7 @@
 		This is caused by your device enters power saving mode and stops BlackPlayer from running in the background. You should add BlackPlayer to the whitelist of you can find such a feature on your device. If you are using any extra power saving mode 'Stamina mode' for example try turn that off.<br />
 		Also check if you have any external power saving app that might kill BlackPlayer while its running in the background.<br />
 		If you are using a Huawei device, this is called 'Protected Apps' in the Battery Manager and you should whitelist BlackPlayer there.<br />
-		Read more here:<a href="https://android.stackexchange.com/questions/152649/what-is-protected-apps-in-huawei-phones">https://android.stackexchange.com/questions/152649/what-is-protected-apps-in-huawei-phones</a><br />
+		Read more here: <a href="https://android.stackexchange.com/questions/152649/what-is-protected-apps-in-huawei-phones">https://android.stackexchange.com/questions/152649/what-is-protected-apps-in-huawei-phones</a><br />
 		If you are using a NOKIA phone, this feature is called 'Background Activity Manager'. Found in  Settings > Battery > Battery Activity Manager > 'BlackPlayer' should be added in Whitelist. <br />
 		<br />
 		
@@ -701,7 +702,7 @@
 		<a href="#Index"><h4>Go to Top</h4></a>
 		<br />
 		
-		Last updated: 2018-11-20
+		Last updated: 2018-11-30
 	</body>
 
 </html>
