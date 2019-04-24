@@ -142,12 +142,13 @@
 		<br />
 		
 		<b>- Is there a way to force rescan (recreate) the Library from scratch? I see duplicate tracks in the library!</b> <br />
+		If you are using 'BlackPlayer Custom Library' you can reset the Audio database in BlackPlayer Custom library settings. 
+		If you are seeing duplicate Tracks you can try Manually selecting the music folders to scan from in Metadata Settings -> BlackPlayer Library Settings -> Manually Select folders.<br />
 		You can try to re-scan the library by entering Phone Settings -> Apps -> System -> Media Storage -> Clear Data. Then reboot. <br />
 		Note!! Everything will be rescanned from scratch, that includes All photo-Images, Ringtones, Alarms, Audio and all Playlists, i.e. some or all of these might be lost. However no files will be deleted.<br />
 		Doing this might also fix the issue of duplicate tracks. <br />
 		The 'Media Storage' app might be called something else if you have any other language than English. <br />
 		If you can't find it you might need to enable 'Show System apps' in an overflow (3dots) icon. <br />
-		If you are using 'BlackPlayer Custom Library' you can reset the Audio database in BlackPlayer Custom library settings.<br />
 		
 		<br />
 		
@@ -203,7 +204,7 @@
 		This is brand new audio library that is customly made to fit BlackPlayer needs for reliability and performance.<br />
 		It fixes issues with Playlist, Favorites and disappearing Album covers.<br />
 		Playlists will not be removed when you unmount(remove) your SD-card however they will be removed if you uninstall or clear app data of BlackPlayer since they are stored within the app. Playlists backups are by default run in the background.<br />
-		To enable the Custom audio library, Enter Advanced Setting and Enable 'Beta Test New Library'. This will enable the 'Audio Library' tab found in the left sliding menu. Enter there and enable the new library.<br />
+		To enable the Custom audio library, Enter Metadata Setting -> 'Select Audio Library'.<br />
 		The new library also fixes issues with 'Error Adding to Favorites'<br />
 		Extra features with the library includes new startpage called 'PLAY NOW', tracks both monthly and total most played tracks,artists and albums. More sorting options. Support for 'ALBUM-ARTIST', and support for 'YEARS' and 'COMPOSERS' in BlackPlayer EX. Faster loading. Multi tag editing (available from multi select). Auto queue continue mode (available in the overflow button in the play-queue.<br />
 		
@@ -221,6 +222,7 @@
 		The crossfading is not supported on all devices. In most cases its due to the audio hardware decoder. However if you are using Bluetooth audio, crossfading should work fine. 
 		The issues with crossfading is the reason why the features is included in the free version.<br />
 		Please also turn off the Equalizer and all Sound-effects, they disturb the crossfading.<br />
+		If you want flawless crossfading you can try switch to the alternative audio decoder 'ExoPlayer'. Switch in Advanced Settings -> 'Select Audio decoder'. However sound effects are not working yet using that.<br />
 		
 		<br />
 		
@@ -275,11 +277,18 @@
 		<b>- Please add support for ReplayGain, Pitch control & Tempo/playback speed control </b> <br />
 		BlackPlayer currently uses the build-in audio decoder on your device and this does not support of these features. <br />
 		To add these features BlackPlayer needs to switch to its own audio decoder, but there are no current plans to do so. <br />
+		If you want Tempo/playback speed control you can try the experimental audio decoder 'ExoPlayer'. Switch to this in Advanced Settings -> 'Select Audio decoder'.<br />
 		
 		<br />
 		
 		<b>- Shuffle mode keeps turning off.</b> <br />
 		Playing a Album, Artist, Playlist or Genre (Pressing Play button in) currently turns off Shuffle. (Might change in later versions). Shuffle might be turned off in other cases, its an issue im trying to resolve.<br />
+		
+		<br />
+		
+		<b>- Chromecast button is not appearing! (BlackPlayer EX only)</b> <br />
+		Make sure 'Chromecast Integration' in enabled in Audio Settings and restart BlackPlayer after enabling that.<br />
+		Make sure you are located in the same WiFi as the Chromecast device. If your WiFi has dual frequency (2,4 Ghz and 5.0 Ghz) make sure you are on the same as the Chromecast device (in most cases 2,4 Ghz).<br />
 		
 		<br />
 		
@@ -342,8 +351,9 @@
 		
 		<br />
 		
-		<b>- How do I embed Lyrics?</b> <br />
+		<b>- How do I embed (Edit) Lyrics?</b> <br />
 		BlackPlayer can embed lyrics manually from the Tag edit dialog in each track or from the "Edit Lyrics" quick action. <br />
+		You can also Edit the lyrics by tapping on the Album cover in 'Now Playing' page and tapping on 'Show Lyrics' button. Long press on the Lyrics that appear atop of the Album cover.<br />
 		
 		<br />
 		
@@ -703,7 +713,7 @@
 		<a href="#Index"><h4>Go to Top</h4></a>
 		<br />
 		
-		Last updated: 2019-03-20
+		Last updated: 2019-04-24
 	</body>
 
 </html>
