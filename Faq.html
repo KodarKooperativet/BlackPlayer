@@ -190,6 +190,7 @@
 		Connect your device to the computer and transfer them as regular MP3 files to your music collection folder. <br />
 		<br />
 		The tracks downloaded from the Google Music Android app are stored in \Android\data\com.google.android.music\files\music and contains no tag information. They need to be moved in order to BlackPlayer to detect them.<br />
+		You need also to disable 'Skip Data folders' in Metadata Settings -> BlackPlayer Library Settings.<br />
 		
 		<br />
 		
@@ -385,7 +386,8 @@
 		
 		<b>- Please add support for "ALBUM ARTIST" tag. Where do I enable the "Album-Artists"?</b> <br />
 		BlackPlayer uses the build-in music library, and the build-in music library unfortunately does not support the "ALBUM ARTIST" tag/table. <br />
-		However you can switch to the new 'BlackPlayer Custom Library' in Metadata Settings that supports this feature! Try it out!<br />
+		However you can switch to the new 'BlackPlayer Custom Library' in 'Metadata Settings' -> 'Select Audio Library', this supports that feature! Try it out! <br />
+		If you are still missing that page, BlackPlayer EX users might need to open 'Manage Pages' in Library pages and enable that page.<br />
 		If you want to reduce the number of Artists, I recommend you to enable 'Hide Small Artists', found by tapping on the ARTISTS title, or in Metadata settings. <br />
 		<br />
 	
@@ -460,10 +462,11 @@
 		
 		<h3><a id="TagEditing">File Tag Editing / Delete</a></h3>
 		
-		<b>- My file cannot be edited? Error!? I cannot delete Music!</b> <br />
+		<b>- My file cannot be edited? Error!? I cannot delete Music! Cannot write do this file.</b> <br />
 		Some music files have damaged ID3 tags and cannot be edited. <br />
-		(Android 4.4 Only) Music files stored on the SD card might not be edited due to Android limitations. Google "SD card fix Android 4.4" for more info. <br />
-		(Android 5.0+) Users must grant BlackPlayer write access and thus allowing tag editing and delete music. Can be accessed in Advanced settings. Select the root of the SD-card.<br />
+		(Android 5.0+) If the Audio files is stored on the SD-Card. You need to grant BlackPlayer Write access to the SD-card to allow tag editing and deleting of files. 
+		'Select SD-Card' is found in Advanced settings. Select the root of the SD-card.<br />
+		(Android 4.4 Only) If the Audio files is stored on the SD card it cannot be edited or deleted due to Android limitations. Google "SD card fix Android 4.4" for more info. <br />
 		
 		<br />
 		
@@ -713,7 +716,7 @@
 		<a href="#Index"><h4>Go to Top</h4></a>
 		<br />
 		
-		Last updated: 2019-04-24
+		Last updated: 2019-05-14
 	</body>
 
 </html>
