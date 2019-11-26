@@ -49,6 +49,9 @@
 		<h3> <a id="BlackBar">I see Black empty bar at the bottom. Navigation bars are above the window.</a></h3>
 		Enable 'Hidden Navigation bar' in Advanced Settings to fix this issue.<br />
 		If the Navigation bars are above the window you might have enabled this option, try disable it.<br />
+		This setting should not be needed in BlackPlayer EX 20.54 and Free 3.03 or newer.<br />
+		
+		
 		<br />
 		
 		<h3> <a id="Playlists">Playlists</a></h3>
@@ -289,7 +292,6 @@
 		
 		<b>- Please add support for ReplayGain, Pitch control & Tempo/playback speed control </b> <br />
 		BlackPlayer currently uses the build-in audio decoder on your device and this does not support of these features. <br />
-		To add these features BlackPlayer needs to switch to its own audio decoder, but there are no current plans to do so. <br />
 		If you want Tempo/playback speed control you can try the experimental audio decoder 'ExoPlayer'. Switch to this in Advanced Settings -> 'Select Audio decoder'.<br />
 		The new Tempo control is then located in the play-queue page at the top.<br />
 		
@@ -303,6 +305,14 @@
 		<b>- Chromecast button is not appearing! (BlackPlayer EX only)</b> <br />
 		Make sure 'Chromecast Integration' in enabled in Audio Settings and restart BlackPlayer after enabling that.<br />
 		Make sure you are located in the same WiFi as the Chromecast device. If your WiFi has dual frequency (2,4 Ghz and 5.0 Ghz) make sure you are on the same as the Chromecast device (in most cases 2,4 Ghz).<br />
+		
+		<br />
+		
+		<b>- Chromecast is stops in the background</b> <br />
+		This happens when your have not turn off the System Battery optimizations for BlackPlayer.<br />
+		Open System Settings -> Apps -> BlackPlayer -> Battery (or Battery saving).<br />
+		Change 'Battery Optimization' to 'Off' (Samsung) or 'No restrictions' (Xiaomi). BlackPlayer needs to be marked as 'Not Optimized' <br />
+		Restart BlackPlayer after changing this and the Chromecast should work fine.<br />
 		
 		<br />
 		
@@ -739,7 +749,7 @@
 		<a href="#Index"><h4>Go to Top</h4></a>
 		<br />
 		
-		Last updated: 2019-10-24
+		Last updated: 2019-11-23
 		</body>
 
 </html>
