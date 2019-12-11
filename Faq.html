@@ -25,7 +25,7 @@
 		
 		<a href="#Playlists">	<h4>1. Playlists, Recently Added, All my Playlists gone/dissapearing</h4></a>
 		<a href="#Library">		<h4>2. Library, Missing Tracks, Use as Ringtone, Hide Tracks (voices,ringtone,notifications). Exclude/Include Folder. Multiple Albums Tracks on Album with same Title</h4></a>
-		<a href="#AudioFormat">	<h4>3. Audio formats (WMA,ALAC,M4A,cue),Crossfading, Gapless, External Apps, Playback issues, Equalizer, Audio effects</h4></a>
+		<a href="#AudioFormat">	<h4>3. Audio formats (WMA,ALAC,M4A,cue),Crossfading, Gapless, External Apps, Playback issues, Equalizer, Audio effects, Chromecast, Music STOPS in Background.</h4></a>
 		<a href="#Lyrics">		<h4>4. Lyrics, missing 'Lyrics' button. Cannot Add Lyrics</h4></a>
 		<a href="#AlbumArtist">	<h4>5. Album-Artist support</h4></a>
 		<a href="#Lockscreen">	<h4>6. Lockscreen</h4></a>
@@ -295,7 +295,7 @@
 		
 		<b>- Chromecast button is not appearing! (BlackPlayer EX only)</b> <br />
 		Make sure 'Chromecast Integration' in enabled in Audio Settings and restart BlackPlayer after enabling that.<br />
-		Make sure you are located in the same WiFi as the Chromecast device. If your WiFi has dual frequency (2,4 Ghz and 5.0 Ghz) make sure you are on the same as the Chromecast device (in most cases 2,4 Ghz).<br />
+		Make sure you are located in the same WiFi as the Chromecast device. If your WiFi has dual frequency (2,4 Ghz and 5.0 Ghz) you can try and connect to the same as the Chromecast device.<br />
 		
 		<br />
 		
@@ -309,8 +309,8 @@
 		
 		
 		<b>- I want to Music to keep playing while in Phone call!</b> <br />
-		You can do this. You need to block BlackPlayer's 'Phone call' permission in the Phone System Settings -> Apps -> Blackplayer.<br />
-		Also change 'Audio focus' level to 'Ignore All' in BlackPlayer Settings -> Audio -> More.. Note that this will might cause music to continue playing if you disconnect your earphones.<br />
+		Due to recent changes in Android this is currently only available with a lower volume.<br />
+		Change 'Audio focus' level to 'Ignore All' in BlackPlayer Settings -> Audio -> More.. and Music will not pause if a phone call occur. This will also cause BlackPlayer to play during notifications.<br />
 		
 		<br />
 		
@@ -405,8 +405,7 @@
 		<br />
 		
 		<b>- Please add support for "ALBUM ARTIST" tag. Where do I enable the "Album-Artists"?</b> <br />
-		BlackPlayer uses the build-in music library, and the build-in music library unfortunately does not support the "ALBUM ARTIST" tag/table. <br />
-		However you can switch to the new 'BlackPlayer Custom Library' in 'Metadata Settings' -> 'Select Audio Library', this supports that feature! Try it out! <br />
+		Switch to the new 'BlackPlayer Custom Library' in 'Metadata Settings' -> 'Select Audio Library', this supports that feature. The 'Android Audio Library' does not support Album-Artist.<br />
 		If you are still missing that page, BlackPlayer EX users might need to open 'Manage Pages' in Library pages and enable that page.<br />
 		If you want to reduce the number of Artists, I recommend you to enable 'Hide Small Artists', found by tapping on the ARTISTS title, or in Metadata settings. <br />
 		<br />
@@ -428,19 +427,13 @@
 		It's up to the device manufacturer to enable the cover to show up on the Lockscreen, I have no control over it. If you still want Album cover on the lockscreen you can use the Custom lockscreen found in Remote Settings.<br />
 		<br />
 		
-		<b>- I just Updated to (or I am running) Android 5.0 Lollipop and my Lockscreen controls is missing. </b> <br />
-		Lockscreen controls is removed in Lollipop, the Notification is used instead.<br />
-		Sometimes the notification might not be visible due to Androids new notification privacy setting. Change the "When device is locked" setting in "Sound & notification" to any other than "Don't show notifications at all". <br />
-		If you see a "BlackPlayer" "Content hidden" notification, this is due to the new notification privacy setting. <br />
-		<br />
-		
 		<h3><a id="AlbumCover">Album Cover, Artist images</a></h3>
 		
 		<b>- Album Covers and Artist images keep disappearing (gets removed) (after reboot). </b> <br />
 		If you have any Cleaning apps, or disk maintenance apps they might be deleting the image files or the BlackPlayer database.
 		Try to add BlackPlayer as a whitelisted apps or add the BlackPlayer folder as whitelisted.<br />
 		This is a known bug with the album cover management for some phone models.<br />
-		The Album cover management comes without and guarantees and for a more permanent solution you should place the image file in the same folder as the Album, and name it 'cover.jpg' or something similar.<br />
+		The Album cover management comes without and guarantees and for a more permanent solution you should place the image file in the same folder as the Album, and name it 'cover.jpg'.<br />
 		
 		
 		<br />
@@ -475,6 +468,9 @@
 		<br />
 		The Album covers are currently connected to the Album that the Track has. If you want Track unique Album covers you have to split up the Track from the Album (by changing the Album title) 
 		and then manually change the cover of the new Album. <br />
+		If you already have embedded Album covers in every different track, you can enable 'Prefer Embedded' in Metadata Settings. <br />
+		
+		
 		<br />
 		
 		<b>- How to disable Artist images? I want to prevent downloading of Artist images. </b><br />
@@ -698,7 +694,7 @@
 		
 		<b>- How do I become beta tester?</b> <br />
 		BlackPlayer is in need of beta testers that report bugs in the community. You can join with these links, use the correct link depending on your version of BlackPlayer. Also see above question.<br />
-		Free: <a href="https://play.google.com/apps/testing/com.kodarkooperativet.blackplayerfree">https://play.google.com/apps/testing/com.kodarkooperativet.blackplayerfree</a></h4> <br />
+		Free: <a href="https://play.google.com/apps/testing/com.musicplayer.blackplayerfree">https://play.google.com/apps/testing/com.musicplayer.blackplayerfree</a></h4> <br />
 		EX (paid): <a href="https://play.google.com/apps/testing/com.kodarkooperativet.blackplayerex">https://play.google.com/apps/testing/com.kodarkooperativet.blackplayerex</a></h4> <br />
 		
 		<br />
@@ -745,7 +741,7 @@
 		<a href="#Index"><h4>Go to Top</h4></a>
 		<br />
 		
-		Last updated: 2019-12-03
+		Last updated: 2019-12-11
 		</body>
 
 </html>
